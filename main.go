@@ -98,7 +98,7 @@ func (p *TCPProxy) handleConnection(clientConn net.Conn) {
 
 func main() {
 	listenAddr := ":" + os.Getenv("PORT")
-	targetAddr := os.Getenv("V2RAY_SERVER_IP") + ":80"
+	targetAddr := os.Getenv("V2RAY_SERVER_IP") + ":443"
 
 	config := Config{
 		ListenAddr: listenAddr,
